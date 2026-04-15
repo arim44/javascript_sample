@@ -1,0 +1,22 @@
+<!-- 요소 생성 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul class="list"></ul>
+    <button class="add">추가</button>
+    <script>
+        const list = document.querySelector('.list');
+        const btn = document.querySelector('.add');
+        btn.addEventListener('click', () =>{
+            const li = document.createElement('li');
+            li.textContent = '새 항목';
+            list.appendChild(li);
+        })
+    </script>
+</body>
+</html>

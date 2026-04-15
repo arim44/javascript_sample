@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="title"> 제목입니다 </h1>
+    <div class ="box">box 클래스 요소</div>
+    <div><p>div 바로 아래에 있는 p 태그</p></div>
+    <script>
+        const el1 = document.querySelector('#title');
+        const el2 = document.querySelector('.box');
+        const el3 = document.querySelector('div > p');
+        console.log(el1);
+        console.log(el2);
+        console.log(el3);
+    </script>
+</body>
+</html>
